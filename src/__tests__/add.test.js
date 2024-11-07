@@ -16,3 +16,7 @@ test('should return sum of the numbers separated by commas', () => {
 test('should return sum of numbers separated by commas and newLines', ()=>{
     expect(add('1\n2,3')).toBe(6);
 })
+
+test('should handle custom delimiter', () => {
+    expect(add('//;\n1;2')).toBe(3);
+  });
