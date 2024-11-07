@@ -22,11 +22,25 @@ A simple string calculator built using **React.js** with **Test-Driven Developme
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/string-calculator-tdd.git
+```
 
+### 2. Navigate into the Project Folder:
+```bash
 cd string-calculator-tdd
+```
+
+### 3. Install Dependencies:
+```bash
 npm install
+```
 
+### 4. Start the Development Server:
+```bash
 npm run dev
+```
 
+### 5. Run Tests:
+```bash
 npm run test
+```
 
