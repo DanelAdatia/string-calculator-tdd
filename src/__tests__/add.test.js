@@ -8,3 +8,7 @@ test('should return 0 for an empty string', () => {
 test('should return the same number for a single number digit',()=>{
     expect(add('1')).toBe(1);
 })
+
+test('should return sum of the numbers separated by commas', () => {
+  expect(add('1,2,3')).toBe(6);
+});

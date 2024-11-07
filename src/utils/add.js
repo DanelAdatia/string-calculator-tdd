@@ -1,5 +1,6 @@
 export function add(input){
   if (input === '') return 0;
 
-  return parseInt(input);
+  const numbers = input.split(",").map((num)=>parseInt(num, 10))
+  return numbers.reduce((acc, num) => acc + num, 0);
 }
