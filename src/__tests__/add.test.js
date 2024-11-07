@@ -26,3 +26,7 @@ test('should throw error when negative numbers are present', () => {
     'Negative numbers not allowed: -2,-4'
   );
 });
+
+test('should throw an error if input contains alphabetic characters', () => {
+  expect(() => add('1,2,abc,4')).toThrow('Invalid input. Please enter numbers only.');
+});

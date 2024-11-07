@@ -9,6 +9,11 @@ export function add(input) {
     input = input.slice(delimiterEndIndex + 1);
   }
 
+  const invalidInputPattern = /[a-zA-Z]/;
+  if (invalidInputPattern.test(input)) {
+    throw new Error('Invalid input. Please enter numbers only.');
+  }
+  
   const numbers = input
     .split(new RegExp(`[${delimiter}\\n]`))
     .map((num) => num.trim())
