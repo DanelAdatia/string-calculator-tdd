@@ -28,5 +28,11 @@ test('should throw error when negative numbers are present', () => {
 });
 
 test('should throw an error if input contains alphabetic characters', () => {
-  expect(() => add('1,2,abc,4')).toThrow('Invalid input. Please enter numbers only.');
+  expect(() => add('1,2,abc,4')).toThrow(
+    'Invalid input. Please enter numbers only.'
+  );
+});
+
+test('should ignore numbers greater than or equal to 1000 ', () => {
+  expect(add('1,2,1001,1000')).toBe(3);
 });
